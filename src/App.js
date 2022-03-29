@@ -1,9 +1,11 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+// import Container from 'react-bootstrap/Container';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Home from './components/Home';
+
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
         
        
         <Nav />
-        <Button>I am a Bootstrap Button!</Button>
+        <div className='container'>
+          <Home />        
+        </div>
         <Footer />
       
     </div>
