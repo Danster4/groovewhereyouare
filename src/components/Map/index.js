@@ -1,9 +1,8 @@
-
 import React, { Component } from 'react';
 import Container from "react-bootstrap/Container";
 import USAMap from 'react-usa-map';
 
-class Home extends Component {
+class Map extends Component {
 
  mapHandler = (event) => {
     alert(event.target.dataset.name)
@@ -16,12 +15,8 @@ class Home extends Component {
         <USAMap onClick={this.mapHandler} />
       </Container>
     </div>
-    
-  
-)
-  }
-  
-   
+    )
+  }   
 }
 
-export default Home;
+export default Map;
