@@ -6,7 +6,7 @@ import logo from '../../logo.svg';
 
 const Footer = () => {
   return (
-    <Navbar fixed="bottom" bg="dark" variant="dark" className="justify-content-between" expand={false}>
+    <Navbar bg="dark" variant="dark" className="justify-content-between" expand={false}>
       <Container fluid>
         <Navbar.Brand href="#home">
           <img

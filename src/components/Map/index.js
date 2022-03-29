@@ -11,7 +11,13 @@ class Map extends Component {
   render() {
     return (
     <div>
-      <Container>
+      <Container fluid>
+        <section>
+          <h1 className="text-white">
+            Film Your Home.
+          </h1>
+        </section>
+        
         <USAMap onClick={this.mapHandler} />
       </Container>
     </div>
