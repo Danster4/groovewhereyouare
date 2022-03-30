@@ -52,7 +52,7 @@ function App() {
 
             <Route exact path="/FL" element={<Florida />} />
 
-            <Route component={NoMatch} />
+            <Route path="*" element={<NoMatch />} />
           </Routes>       
           </div>
           <Footer />
