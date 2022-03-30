@@ -10,6 +10,8 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 import NoMatch from './pages/NoMatch';
 
 
@@ -42,6 +44,8 @@ function App() {
           <div className='container'>
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/about-us" element={<AboutUs />} />
+            <Route exact path="/contact-us" element={<ContactUs />} />
 
             <Route component={NoMatch} />
           </Routes>       

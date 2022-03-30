@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from 'react-router-dom';
+
 import Container from "react-bootstrap/Container";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -7,14 +9,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+
 import logo from '../../logo.svg';
+
 
 
 const Navigation = () => {
   return (
     <Navbar bg="dark" variant="dark" expand={false}>
       <Container fluid>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             alt="logo"
             src={logo}
@@ -44,9 +48,9 @@ const Navigation = () => {
       <Offcanvas.Body>
         
       <Nav className="justify-content-end flex-grow-1 pe-3">
-          <Nav.Link className="text-success" href="#action1">Home</Nav.Link>
-          <Nav.Link className="text-success" href="#action2">About Us</Nav.Link>
-          <Nav.Link className="text-success" href="#action3">Contact Us</Nav.Link>
+          <Nav.Link className="text-success" href="/">Home</Nav.Link>
+          <Nav.Link className="text-success" href="/about-us">About Us</Nav.Link>
+          <Nav.Link className="text-success" href="/contact-us">Contact Us</Nav.Link>
           <NavDropdown className="text-success" title="States" id="offcanvasNavbarDropdown">
             <NavDropdown.Item className="text-success" href="#action3">Alabama</NavDropdown.Item>
             <NavDropdown.Item className="text-success" href="#action4">Arkansas</NavDropdown.Item>
