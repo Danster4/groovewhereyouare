@@ -1,5 +1,7 @@
 import React from 'react';
 import Container from "react-bootstrap/Container";
+import { Link } from 'react-router-dom';
+
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -15,6 +17,7 @@ const Home = () => {
         </video> */}
         <Map />
         <AboutCompany />
+        <Link to="/FL">Florida</Link>
       </Container>
     </main>
   )

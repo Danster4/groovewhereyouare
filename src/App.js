@@ -12,6 +12,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+
+import Florida from './pages/statePages/Florida';
+
 import NoMatch from './pages/NoMatch';
 
 
@@ -46,6 +49,8 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about-us" element={<AboutUs />} />
             <Route exact path="/contact-us" element={<ContactUs />} />
+
+            <Route exact path="/FL" element={<Florida />} />
 
             <Route component={NoMatch} />
           </Routes>       

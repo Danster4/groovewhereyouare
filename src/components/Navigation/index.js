@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from 'react-router-dom';
 
 import Container from "react-bootstrap/Container";
 import Navbar from 'react-bootstrap/Navbar';
@@ -54,6 +53,7 @@ const Navigation = () => {
           <NavDropdown className="text-success" title="States" id="offcanvasNavbarDropdown">
             <NavDropdown.Item className="text-success" href="#action3">Alabama</NavDropdown.Item>
             <NavDropdown.Item className="text-success" href="#action4">Arkansas</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="/FL">Florida</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action5">
               Something else here
