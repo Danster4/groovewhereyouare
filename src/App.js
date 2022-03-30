@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 // import Container from 'react-bootstrap/Container';
 
-import Nav from './components/Nav';
+import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
@@ -38,7 +38,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="App bg-dark">
-          <Nav />
+          <Navigation />
           <div className='container'>
           <Routes>
             <Route exact path="/" element={<Home />} />
