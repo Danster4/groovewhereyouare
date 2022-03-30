@@ -24,17 +24,25 @@ const Navigation = () => {
           />{' '}
             Groove Where You Are
           </Navbar.Brand>
+          
+          {/* fix login button to be pushed a little the left */}
+          <Button className="ms-auto pr-2 mr-3" variant="success">Login</Button>
+          <Button className="m-3" variant="secondary">Signup</Button>
       
       <Navbar.Toggle aria-controls="offcanvasNavbar" />
       <Navbar.Offcanvas
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
       placement="end"
+      // g-2 is probably unnecessary - attempt to push login button to left
+      className="g-2"
     >
       <Offcanvas.Header closeButton>
         <Offcanvas.Title id="offcanvasNavbarLabel">Groove Where You Are</Offcanvas.Title>
       </Offcanvas.Header>
+      
       <Offcanvas.Body>
+        
       <Nav className="justify-content-end flex-grow-1 pe-3">
           <Nav.Link className="text-success" href="#action1">Home</Nav.Link>
           <Nav.Link className="text-success" href="#action2">About Us</Nav.Link>
@@ -47,6 +55,61 @@ const Navigation = () => {
               Something else here
             </NavDropdown.Item>
           </NavDropdown>
+          <NavDropdown className="text-success" title="Cities" id="offcanvasNavbarDropdown2">
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action3">Tampa</NavDropdown.Item>
+            <NavDropdown.Item className="text-success" href="#action4">Miami</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action5">
+              Something else here
+            </NavDropdown.Item>
+          </NavDropdown>
+          <Button className="me-auto" variant="secondary">Signup</Button>
         </Nav>
         <NavDropdown.Divider />
         <Form className="d-flex pt-2">
@@ -62,7 +125,7 @@ const Navigation = () => {
             className="me-2"
             aria-label="Search"
           />
-          <Button variant="outline-success">Login</Button>
+          <Button variant="success">Login</Button>
         </Form>
       </Offcanvas.Body>
     </Navbar.Offcanvas>
