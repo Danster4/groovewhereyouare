@@ -1,7 +1,9 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import NaturePic from '../../assets/images/Nature_04-02.png';
+// import playButtonAnimated from '../../assets/images/play-button-animated.svg'
 import playButton from '../../assets/images/play-button-svgrepo-com.svg'
+
 
 
 const HeroFrontPage = () => {
@@ -13,7 +15,8 @@ const HeroFrontPage = () => {
       </p>
       {/* add styles and responsiveness to play button later --- styles="padding: 100px" */}
       <a href="https://www.youtube.com" >
-        <img src={playButton} width="50px"/>
+        <img src={playButton} width="50px" />
+        {/* <object type="image/svg+xml" data={playButton} width="50px">LAla</object> */}
       </a>
     </div>
   )
