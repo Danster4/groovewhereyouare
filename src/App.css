@@ -52,6 +52,8 @@ path:hover {
 
 .aboutCompany {
   min-height: 100vh;
+  background-color: #75d1ce;
+  width: 100%;
 }
 
 html, body {
@@ -61,9 +63,21 @@ html, body {
 
 /* fix image in to use svg instead of large png */
 .heroFrontPage {
-  background-image: url(../src/assets/images/Nature_04-02.png);
-  
+  min-height: 100vh;
+  width: 100%;
+  text-align: center
+}
 
+html, body, body > div, .app {
+  height: 100%;
+}
+
+.imageFrontPage {
+  background-image: url(../src/assets/images/Nature_Background.svg);
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center
 }
 
 /* .App {

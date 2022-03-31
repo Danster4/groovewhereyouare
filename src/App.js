@@ -44,7 +44,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="App bg-dark heroFrontPage">
+        <div className="App imageFrontPage">
           <Navigation />
           <div className='container'>
           <Routes>

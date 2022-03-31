@@ -68,7 +68,7 @@ class Map extends Component {
     <div>
       <Container fluid>
         <section>
-          <h1 className="text-white">
+          <h1 className="">
             Film Your Home.
           </h1>
         </section>

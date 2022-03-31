@@ -12,10 +12,10 @@ import Button from 'react-bootstrap/Button';
 import logo from '../../logo.svg';
 
 
-
+// bg="dark"
 const Navigation = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand={false}>
+    <Navbar variant="dark" expand={false}>
       <Container fluid>
         <Navbar.Brand href="/">
           <img
@@ -29,8 +29,8 @@ const Navigation = () => {
           </Navbar.Brand>
           
           {/* fix login button to be pushed a little the left */}
-          <Button className="ms-auto pr-2 mr-3" variant="success">Login</Button>
-          <Button className="m-3" variant="secondary">Signup</Button>
+          <Button className="d-none d-md-block ms-auto pr-2 mr-3" variant="success">Login</Button>
+          <Button className="d-none d-md-block m-3" variant="secondary">Signup</Button>
       
       <Navbar.Toggle aria-controls="offcanvasNavbar" />
       <Navbar.Offcanvas
