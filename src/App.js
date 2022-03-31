@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import HeroFrontPage from './components/HeroFrontPage';
+
 
 import Florida from './pages/statePages/Florida';
 
@@ -42,7 +44,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="App bg-dark">
+        <div className="App bg-dark heroFrontPage">
           <Navigation />
           <div className='container'>
           <Routes>
