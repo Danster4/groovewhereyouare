@@ -15,7 +15,7 @@ import logo from '../../logo.svg';
 // bg="dark"
 const Navigation = () => {
   return (
-    <Navbar variant="dark" expand={false}>
+    <Navbar variant="dark" className="navbarStyle" expand={false}>
       <Container fluid>
         <Navbar.Brand href="/">
           <img

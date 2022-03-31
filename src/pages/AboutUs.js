@@ -5,12 +5,12 @@ import AboutCompany from '../components/AboutCompany';
 
 const AboutUs = () => {
   return (
-    <main>
-      <Container className='flex-row justify-space-between '>
+    <main className='innerPageContainer'>
+      {/* <Container className='flex-row justify-space-between '> */}
         
         <h1 className='text-white'>This is the About Us page </h1>
         <AboutCompany />
-      </Container>
+      {/* </Container> */}
     </main>
   )
   

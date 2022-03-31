@@ -18,9 +18,9 @@ class Map extends Component {
 
   mapHandler = (event) => {
     return(
-    <Navigate exact path="/about-us" element={<AboutUs />} />
+    // <Navigate exact path="/about-us" element={<AboutUs />} />
 
-      // alert(event.target.dataset.name + " this is florida")
+      alert(event.target.dataset.name + " this is florida")
     )
     
 };
@@ -65,8 +65,8 @@ class Map extends Component {
 
   render() {
     return (
-    <div>
-      <Container fluid>
+    <div className='innerPageContainer'>
+      
         <section>
           <h1 className="">
             Film Your Home.
@@ -74,7 +74,7 @@ class Map extends Component {
         </section>
 
         <USAMap onClick={this.mapHandler} />
-      </Container>
+      
     </div>
     )
   }   

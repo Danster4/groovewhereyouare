@@ -11,17 +11,19 @@ import AboutCompany from '../components/AboutCompany';
 
 const Home = () => {
   return (
-    <main className=''>
+    <div className='pageContainer'>
+      {/* <div className='innerPageContainer'> */}
       <HeroFrontPage />
-      <Container className='flex-row justify-space-between '>
+      {/* <Container className='flex-row justify-space-between '> */}
         {/* <video autoPlay loop muted className='videoBg'>
           <source src="https://www.youtube.com/watch?v=7jWzXfRBUtU" />
         </video> */}
         {/* <Map /> */}
         <AboutCompany />
         <Link to="/FL">Florida</Link>
-      </Container>
-    </main>
+      {/* </Container> */}
+      {/* </div> */}
+    </div>
   )
   
 }
